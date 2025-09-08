@@ -1,1 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shuvo Ronjon Das — Machine Learning researcher</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div style="font-weight:800">Shuvo Ronjon Das</div>
+      <nav style="margin-left:auto">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="blog.html">Blog</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <img src="assets/profile.jpg" alt="Shuvo" class="profile-img">
+        <div class="hname">Shuvo Ronjon Das</div>
+        <div class="hsub">B.Sc. EEE — Jashore University of Science & Technology</div>
+        <div class="small">Research interests: Biomedical Signal Processing, TinyML, Time-series, Explainable AI</div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="small">Contact</div>
+          <div class="meta" style="margin-top:8px">
+            <div>Email: <a href="mailto:iamsrd@example.com">iamsrd@example.com</a></div>
+            <div>Location: Jashore, Khulna, Bangladesh</div>
+            <div style="margin-top:8px"><a class="badge" href="assets/cv.pdf" target="_blank">Download CV</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="small">Social</div>
+          <div style="margin-top:8px" class="socials">
+            <a href="https://github.com/iamsrd" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/iamsrd" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            <a href="https://orcid.org" target="_blank">ORCID</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main>
+        <section class="card">
+          <div class="section-title">
+            <h2 style="margin:0">About</h2>
+            <div class="small">Last update: 2025</div>
+          </div>
+          <p class="small" style="margin-top:8px">
+            I am an EEE undergraduate and ML researcher working on low-cost biomedical devices (ECG, sEMG), TinyML on embedded systems, and interpretable deep learning for healthcare.
+          </p>
+        </section>
+
+        <section id="pubs" class="card" aria-labelledby="pubs-title">
+          <div class="section-title">
+            <h3 id="pubs-title" style="margin:0">Latest Publications</h3>
+            <a class="small" href="publications.html">See all</a>
+          </div>
+          <ul id="latest-pubs" class="list" style="margin-top:10px"></ul>
+        </section>
+
+        <section id="projs" class="card">
+          <div class="section-title">
+            <h3 style="margin:0">Latest Projects</h3>
+            <a class="small" href="projects.html">See all</a>
+          </div>
+          <ul id="latest-projects" class="list" style="margin-top:10px"></ul>
+        </section>
+
+        <section id="posts" class="card">
+          <div class="section-title">
+            <h3 style="margin:0">Latest Blog Posts</h3>
+            <a class="small" href="blog.html">See all</a>
+          </div>
+          <ul id="latest-posts" class="list" style="margin-top:10px"></ul>
+        </section>
+
+      </main>
+    </div>
+
+    <div class="footer">© Copyright by Shuvo Ronjon Das</div>
+  </div>
+
+  <script>
+    // simple fetch & render helpers (reads JSON files in /data/)
+    async function loadJSON(path){ const r=await fetch(path); return r.ok? r.json() : [] }
+    function renderList(el, items, formatter){ const node=document.getElementById(el); node.innerHTML=''; items.slice(0,3).forEach(it=>{ const li=document.createElement('li'); li.innerHTML=formatter(it); node.appendChild(li); }); }
+
+    (async function(){
+      const pubs = await loadJSON('data/publications.json');
+      renderList('latest-pubs', pubs, it => `<strong><a href="${it.detail || it.pdf}">${it.title}</a></strong><div class="meta">${it.venue} • ${it.year}</div>`);
+      const projects = await loadJSON('data/projects.json');
+      renderList('latest-projects', projects, it => `<strong><a href="${it.link}">${it.title}</a></strong><div class="meta">${it.tech} — ${it.year}</div>`);
+      const posts = await loadJSON('data/posts.json');
+      renderList('latest-posts', posts, it => `<strong><a href="${it.link}">${it.title}</a></strong><div class="meta">${it.date}</div>`);
+    })();
+  </script>
+</body>
+</html>
 
