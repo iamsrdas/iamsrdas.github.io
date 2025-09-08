@@ -1,0 +1,20 @@
+[
+  {
+    "id":"paper1",
+    "title":"IoT-Based Smart ECG Monitoring & Diagnostic System",
+    "authors":"S. R. Das, A. Example",
+    "venue":"International Conf. on Emerging Technologies 2025",
+    "year":2025,
+    "pdf":"assets/publications/ecg.pdf",
+    "detail":"publications/paper1.html",
+    "bibtex":"@article{das2025ecg, title={IoT-Based Smart ECG Monitoring & Diagnostic System}, author={Das, SR}, year={2025}}"
+  },
+  {
+    "id":"paper2",
+    "title":"TinyML filtering for wearable ECG",
+    "authors":"S. R. Das",
+    "venue":"Workshop on Embedded AI, 2024",
+    "year":2024,
+    "pdf":"assets/publications/tinyml_ecg.pdf"
+  }
+]
