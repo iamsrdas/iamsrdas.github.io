@@ -1,0 +1,4 @@
+[
+  {"id":"biobeat","title":"BioBEAT — Wireless ECG device","year":2025,"tech":"ESP32, AD8232, TinyML","link":"projects/biobeat.html","thumb":"assets/images/project1.jpg","summary":"Real-time ECG with web visualization"},
+  {"id":"inverter","title":"500W Inverter Design","year":2025,"tech":"MATLAB/Simulink","link":"https://github.com/iamsrd/inverter","thumb":"assets/images/inverter.jpg"}
+]
