@@ -26,22 +26,22 @@
    1) SITE-WIDE INFO — used in the navbar, hero, footer, and contact page
    --------------------------------------------------------------------- */
 const SITE = {
-  name: "Shuvo",                     // EDIT: your full name
-  role: "M.Tech Student — Electric Vehicle Technology",
+  name: "SHUVO RONJON DAS",                     // EDIT: your full name
+  role: "M.Tech in Electric Vehicle Technology",
   institution: "Indian Institute of Technology Roorkee",
   location: "Roorkee, Uttarakhand, India",
-  thesis: "Researching power electronics and battery management strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
+  thesis: "Researching Artificial intelligence, power electronics and battery management strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
   photo: "assets/img/profile.jpg",   // EDIT: replace this file with your photo (same name, or update the path)
-  email: "you@example.com",          // EDIT
+  email: "iamsrdas00@gmail.com",          // EDIT
   cvFile: "assets/cv/CV.pdf",        // EDIT: drop your CV PDF into assets/cv/ with this name
 
   // EDIT each URL below. Leave the quotes empty ("") to hide an icon site-wide.
   social: {
-    linkedin:  "https://linkedin.com/in/yourprofile",
-    facebook:  "https://facebook.com/yourprofile",
-    instagram: "https://instagram.com/yourprofile",
-    youtube:   "https://youtube.com/@yourchannel",
-    scholar:   "https://scholar.google.com/citations?user=XXXXXXX"
+    linkedin:  "https://linkedin.com/in/shuvoronjon",
+    facebook:  "https://facebook.com/IamShuvoRonjon",
+    instagram: "https://instagram.com/shuvo_ronjon",
+    youtube:   "https://youtube.com/@SRD_IITR",
+    scholar:   "https://scholar.google.com/citations?user=shuvo"
   }
 };
 
@@ -132,8 +132,17 @@ const awards = [
   {
     title: "ICCR Suborno Jayanti Scholarship",
     org: "Indian Council for Cultural Relations",
-    year: "2025",
-    description: "Full scholarship awarded for M.Tech study in India."
+    year: "2026",
+    description: "Full scholarship awarded for M.Tech study in indian Institute of Technology Roorkee, Uttarakhand, India."
+  }
+];
+
+const awards = [
+  {
+    title: "1st Runner Up",
+    org: "Ansys SCADE Student Challenge 2026 at IIT Roorkee",
+    year: "2026",
+    description: "Just wrapped up an amazing 2-day EV & BMS workshop at IIT Roorkee on 24-25 Aug 2026 and bagged 1st Runner-Up in the Ansys SCADE Student Challenge of building a small BMS among 150+ participants."
   }
 ];
 
