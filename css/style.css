@@ -81,7 +81,8 @@ header.site-header{
 .brand{font-family:var(--f-display);font-weight:700;font-size:1.05rem;color:var(--text);display:flex;align-items:center;gap:10px;}
 .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);}
 .brand:hover{text-decoration:none;}
-
+.nav-links{display:flex;gap:22px;flex-wrap:wrap;align-items:center;}
+.nav-links a{white-space:nowrap;}
 /* dropdown menu (the "signature" nav pattern requested: one menu, all pages) */
 .menu-wrap{position:relative;}
 .menu-btn{
