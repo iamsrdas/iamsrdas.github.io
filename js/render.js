@@ -38,20 +38,16 @@ function qs(name){
 /* ---- header / footer, injected into <div id="site-header">/<div id="site-footer"> ---- */
 function renderHeader(active){
   const items = NAV_LINKS.map(l =>
-    `<a href="${l.href}" class="${l.key === active ? 'active' : ''}">${l.label}<span class="k">${l.key === active ? '•' : ''}</span></a>`
+    `<a href="${l.href}" class="charge-link ${l.key === active ? 'active' : ''}">${l.label}</a>`
   ).join('');
   const html = `
     <div class="nav-inner">
       <a class="brand" href="index.html"><span class="dot"></span>${SITE.name}</a>
-      <div class="menu-wrap" id="menuWrap">
-        <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false">
-          MENU <svg viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
-        </button>
-        <div class="dropdown">${items}</div>
-      </div>
+      <nav class="nav-links">${items}</nav>
     </div>`;
   const el = document.getElementById('site-header');
   if (el) el.innerHTML = html;
+}
 
   const btn = document.getElementById('menuBtn');
   const wrap = document.getElementById('menuWrap');
