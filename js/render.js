@@ -48,17 +48,7 @@ function renderHeader(active){
   const el = document.getElementById('site-header');
   if (el) el.innerHTML = html;
 }
-
-  const btn = document.getElementById('menuBtn');
-  const wrap = document.getElementById('menuWrap');
-  if (btn){
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      wrap.classList.toggle('open');
-      btn.setAttribute('aria-expanded', wrap.classList.contains('open'));
-    });
-    document.addEventListener('click', () => wrap.classList.remove('open'));
-  }
+ 
 }
 
 function renderFooter(){
