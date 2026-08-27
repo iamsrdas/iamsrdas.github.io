@@ -70,7 +70,7 @@ function renderFooter(){
   if (!el) return;
   el.innerHTML = `
     <div class="container foot-inner">
-      <p>&copy; ${new Date().getFullYear()} ${SITE.name}. Built with plain HTML/CSS/JS, hosted on GitHub Pages.</p>
+      <p>&copy; ${new Date().getFullYear()} ${SITE.name}. Built with Love using claude.</p>
       <p class="mono">${SITE.institution}</p>
     </div>`;
 }
