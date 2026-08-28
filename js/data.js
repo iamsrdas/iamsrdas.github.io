@@ -218,6 +218,9 @@ const trainings = [
    7) GALLERY — powers the Gallery page. type: "image" or "video".
    --------------------------------------------------------------------- */
 const gallery = [
-  { type: "image", src: "assets/img/gallery/placeholder-1.jpg", caption: "Ansys SCADE Student Challenge 2026 at IIT Roorkee — 1st Runner-Up Award among 150+ participants" },
-  { type: "image", src: "assets/img/gallery/placeholder-2.jpg", caption: "First Day at IIT Roorkee and it's iconic James Thomason Building" }
+  { type: "image", src: "assets/img/gallery/placeholder-1.jpg", caption: "Ansys SCADE Student Challenge 2026 at IIT Roorkee — 1st Runner-Up Award among 150+ participants", 
+   description: "<p>Your full paragraph goes here — as much as you want. You can use <b>bold</b>, <i>italic</i>, and multiple &lt;p&gt; paragraphs.</p>" },
+  { type: "image", src: "assets/img/gallery/placeholder-2.jpg", caption: "First Day at IIT Roorkee and it's iconic James Thomason Building",
+  description: "<p>Your full paragraph goes here — as much as you want. You can use <b>bold</b>, <i>italic</i>, and multiple &lt;p&gt; paragraphs.</p>"}
 ];
+ 
