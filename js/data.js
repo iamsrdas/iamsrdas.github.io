@@ -31,7 +31,7 @@
    --------------------------------------------------------------------- */
 const SITE = {
   name: "Shuvo Ronjon Das",          // EDIT: your full name — shown in the hero heading, browser tab title, and footer
-  role: "Electrical Engineer & Researcher",   // EDIT: your title/tagline — shown right after your name in the hero heading
+  role: "Electrical Engineer, Researcher and Traveller",   // EDIT: your title/tagline — shown right after your name in the hero heading
   institution: "MTech in Electrical Engineering, Indian Institute of Technology Roorkee ",
   location: "Roorkee, Uttarakhand, India",
   thesis: "Researching Artificial Intelligence, Power Electronics and Battery Management Strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
@@ -55,24 +55,16 @@ const SITE = {
    --------------------------------------------------------------------- */
 const projects = [
   {
-    id: "battery-thermal-management",     // EDIT: unique short id, no spaces (used in the URL)
-    title: "Battery Thermal Management System for EV Packs",
-    date: "2026-08",                      // YYYY-MM, used for sorting/display
-    tags: ["Battery Systems", "Thermal Design", "MATLAB/Simulink"],
+    id: "ecg-based-smart-health-monitoring",     // EDIT: unique short id, no spaces (used in the URL)
+    title: "ECG Based Smart Health Monitoring and Diagnostic System using IoT",
+    date: "2024-10",                      // YYYY-MM, used for sorting/display
+    tags: ["Electrocardiography", "ECG", "Internet of Things", "Health Monitoring"],
     cover: "assets/img/projects/placeholder-1.jpg",   // shown on cards
-    summary: "A liquid-cooling control strategy that keeps an EV battery pack within its safe operating window under fast-charging loads.",
+    summary: "Undergraduate Senior Year Project",
     // Full write-up, shown only on the project's own detail page. HTML allowed.
     description: `
-      <p>This project designs and simulates a <b>closed-loop thermal management
-      strategy</b> for a lithium-ion EV battery pack, targeting stable cell
-      temperatures during DC fast charging.</p>
-      <p>Key contributions:</p>
-      <ul>
-        <li>Built a lumped-parameter thermal model of an 18650 module in Simulink</li>
-        <li>Designed a <span style="color:var(--accent-2)">PID coolant-flow controller</span> to hold cells under 40&deg;C</li>
-        <li>Validated results against bench test data from the EV lab</li>
-      </ul>
-      <blockquote>Replace this paragraph with your own abstract, methodology and results.</blockquote>
+      <p>This project was designed to acquire ECG signals from the human body, process them, display them in real time, and send them to a web-based platform for remote monitoring and basic diagnostic support. It aimed to provide a low-cost and portable ECG monitoring solution using IoT and embedded hardware.</p>
+       
     `,
     // Photos/videos for the detail page. type: "image" or "video". size: "small" | "medium" | "large"
     media: [
@@ -82,13 +74,13 @@ const projects = [
     links: { repo: "", demo: "" }        // EDIT: GitHub repo / live demo URLs, or leave blank
   },
   {
-    id: "example-project-2",
-    title: "Example Second Project — replace me",
-    date: "2026-03",
-    tags: ["Tag One", "Tag Two"],
+    id: "IoT-based-overload-protection-system",
+    title: "IoT-Based Overload Protection System in Electrical Networks using Arduino",
+    date: "2025-04",
+    tags: ["Internet of Things", "Overload Protection", "Arduino"],
     cover: "assets/img/projects/placeholder-3.jpg",
-    summary: "One or two sentence summary that appears on the card in the Projects grid.",
-    description: `<p>Write the full project description here. This box accepts <b>bold</b>, <i>italic</i>, and <span style="color:var(--accent)">colored</span> text.</p>`,
+    summary: "A project under the <b> Switchgear and Protection </b> lab course during my 7th semester ",
+    description: `<p>This project was designed to protect an electrical network from overload conditions by continuously monitoring current and automatically disconnecting the load when the current exceeds a safe limit. An Arduino was used as the control unit, while IoT connectivity enabled remote monitoring and alert notifications.</p>`,
     media: [
       { type: "image", src: "assets/img/projects/placeholder-2.jpg", size: "medium", caption: "" }
     ],
@@ -171,8 +163,8 @@ const blogPosts = [
       how we move. Joining IIT Roorkee's EE department to study this in depth feels like the natural
       next step toward my long-term goal of pursuing a funded PhD abroad.</p>
 
-      <blockquote>Grateful to the High Commission of India, Dhaka, and ICCR for this opportunity.
-      Excited for the journey ahead! 🚗⚡</blockquote>
+      <p> Grateful to the High Commission of India, Dhaka, and ICCR for this opportunity.
+      Excited for the journey ahead! 🚗⚡ </p>
 
       <p>Over the next two years, I'm looking forward to:</p>
       <ul>
@@ -214,7 +206,7 @@ const awards = [
    --------------------------------------------------------------------- */
 const trainings = [
   {
-    title: "Example Workshop — replace me",
+    title: "Two-Day Hands-On Training Workshop on Electric Vehicle and Battery Management Systems",
     org: "Department of Electrical Engineering, Indian Institute of Technology, Roorkee, in association with IEEE Roorkee Subsection, IEEE UP Section, and CADFEM APAC",
     year: "2026",
     image: "assets/img/training/placeholder-1.jpg",   // EDIT: training photo shown on the card and in the popup
