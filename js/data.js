@@ -26,21 +26,21 @@
    1) SITE-WIDE INFO — used in the navbar, hero, footer, and contact page
    --------------------------------------------------------------------- */
 const SITE = {
-  name: "Shuvo Ronjon Das",          // EDIT: your full name — shown in the hero heading, browser tab title, and footer
+  name: "SHUVO RONJON DAS",          // EDIT: your full name — shown in the hero heading, browser tab title, and footer
   role: "Electrical Engineer & Researcher",   // EDIT: your title/tagline — shown right after your name in the hero heading
-  institution: "Indian Institute of Technology Roorkee",
+  institution: "MTech in Electrical Engineering, Indian Institute of Technology Roorkee. Completed Bachelor of Science in Engineering in EEE from Jashore University of Science and Technology",
   location: "Roorkee, Uttarakhand, India",
-  thesis: "Researching power electronics and battery management strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
+  thesis: "Researching Artificial Intelligence, Power Electronics and Battery Management Strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
   photo: "assets/img/profile.jpg",   // EDIT: replace this file with your photo (same name, or update the path)
-  email: "you@example.com",          // EDIT
+  email: "iamsrdas00@gmail.com",          // EDIT
   cvFile: "assets/cv/CV.pdf",        // EDIT: drop your CV PDF into assets/cv/ with this name
 
   // EDIT each URL below. Leave the quotes empty ("") to hide an icon site-wide.
   social: {
-    linkedin:  "https://linkedin.com/in/yourprofile",
-    facebook:  "https://facebook.com/yourprofile",
-    instagram: "https://instagram.com/yourprofile",
-    youtube:   "https://youtube.com/@yourchannel",
+    linkedin:  "https://linkedin.com/in/shuvoronjon",
+    facebook:  "https://facebook.com/IamShuvoRonjon",
+    instagram: "https://instagram.com/shuvo_ronjon",
+    youtube:   "https://youtube.com/@Shuvo_IITR",
     scholar:   "https://scholar.google.com/citations?user=XXXXXXX"
   }
 };
@@ -132,8 +132,8 @@ const awards = [
   {
     title: "ICCR Suborno Jayanti Scholarship",
     org: "Indian Council for Cultural Relations",
-    year: "2025",
-    description: "Full scholarship awarded for M.Tech study in India."
+    year: "2026",
+    description: "Full scholarship awarded for M.Tech in Electrical Engineering at Indian Institute of Technology Roorkee, India."
   }
 ];
 
