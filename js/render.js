@@ -102,21 +102,31 @@ function renderHome(){
   const socialEl = document.getElementById('heroSocial');
   if (socialEl) renderSocialIcons(socialEl);
 
-  const p = projects[0], pub = publications[0], b = blogPosts[0];
-  const readout = document.getElementById('readoutCards');
-  if (readout){
-    readout.innerHTML = `
-      ${p ? `<a class="card-link" href="project.html?id=${p.id}"><div class="card">
-        <span class="label">Latest Project</span><h3>${p.title}</h3>
-        <span class="date">${p.date}</span><p>${p.summary}</p></div></a>` : ''}
-      ${pub ? `<a class="card-link" href="publications.html"><div class="card">
-        <span class="label">Latest Publication</span><h3>${pub.title}</h3>
-        <span class="date">${pub.venue}, ${pub.year}</span><p>${pub.authors}</p></div></a>` : ''}
-      ${b ? `<a class="card-link" href="post.html?id=${b.id}"><div class="card">
-        <span class="label">Latest Blog Post</span><h3>${b.title}</h3>
-        <span class="date">${b.date}</span><p>${b.excerpt}</p></div></a>` : ''}
-    `;
-  }
+const p = projects[0], pub = publications[0], b = blogPosts[0];
+const award = awards[0], training = trainings[0], photo = gallery[0];
+const readout = document.getElementById('readoutCards');
+if (readout){
+  readout.innerHTML = `
+    ${p ? `<a class="card-link" href="project.html?id=${p.id}"><div class="card">
+      <span class="label">Latest Project</span><h3>${p.title}</h3>
+      <span class="date">${p.date}</span><p>${p.summary}</p></div></a>` : ''}
+    ${pub ? `<a class="card-link" href="publications.html"><div class="card">
+      <span class="label">Latest Publication</span><h3>${pub.title}</h3>
+      <span class="date">${pub.venue}, ${pub.year}</span><p>${pub.authors}</p></div></a>` : ''}
+    ${b ? `<a class="card-link" href="post.html?id=${b.id}"><div class="card">
+      <span class="label">Latest Blog Post</span><h3>${b.title}</h3>
+      <span class="date">${b.date}</span><p>${b.excerpt}</p></div></a>` : ''}
+    ${award ? `<a class="card-link" href="awards.html"><div class="card">
+      <span class="label">Latest Award</span><h3>${award.title}</h3>
+      <span class="date">${award.year} · ${award.org}</span><p>${award.description}</p></div></a>` : ''}
+    ${training ? `<a class="card-link" href="training.html"><div class="card">
+      <span class="label">Latest Training</span><h3>${training.title}</h3>
+      <span class="date">${training.year} · ${training.org}</span><p>${training.description}</p></div></a>` : ''}
+    ${photo ? `<a class="card-link" href="gallery.html"><div class="card">
+      <img src="${photo.src}" alt="${photo.caption || ''}">
+      <span class="label">Latest from Gallery</span><p>${photo.caption || ''}</p></div></a>` : ''}
+  `;
+}
 }
 
 /* ---- PROJECTS LIST ---- */
