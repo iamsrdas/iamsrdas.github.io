@@ -138,7 +138,7 @@ const publications = [
       (post.html?id=...). Newest first.
    --------------------------------------------------------------------- */
 const blogPosts = [
- {
+  {
     id: "first-post",
     title: "Starting my Master of Technology in EV Technology at IIT Roorkee",
     date: "2026-07-16",
@@ -189,19 +189,16 @@ const blogPosts = [
    --------------------------------------------------------------------- */
 const awards = [
   {
+    title: "1st Runner Up",
+    org: "Ansys SCADE Student Challenge 2026 organized by IIT Roorkee, CADFEM in association with IEEE Roorkee Subsection and UP Section",
+    year: "2026",
+    description: "1st Runner-Up in the Ansys SCADE Student Challenge where I built a small Battery Management System using Ansys SCADE."
+  },
+  {
     title: "ICCR Suborno Jayanti Scholarship",
     org: "Indian Council for Cultural Relations",
     year: "2026",
     description: "Fully funded scholarship awarded for pursuing Master of Technology in Electrical Engineering at Indian Institute of Technology Roorkee, India."
-  }
-];
-
-const awards = [
-  {
-    title: "1st Runner Up",
-    org: "Ansys SCADE Student Challenge 2026 organized by IIT Roorkee, CADFEM in association with IEEE Roorkee Subsection and UP Section",
-    year: "2026",
-    description: "1st Runner-Up in the Ansys SCADE Student Challenge where I build a small Battery Management System using Ansys SCADE"
   }
 ];
 
