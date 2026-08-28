@@ -207,7 +207,7 @@ const awards = [
    --------------------------------------------------------------------- */
 const trainings = [
   {
-    title: "Example Workshop — replace me",
+    title: "Two Day hands-on Training on EV, BMS",
     org: "Department of Electrical Engineering, Indian Institute of Technology, Roorkee, in association with IEEE Roorkee Subsection, IEEE UP Section, and CADFEM APAC",
     year: "2026",
     description: "The workshop offered a great mix of theory and hands-on practice, covering: Fundamentals of EV operation and Battery Management Systems, Practical motor design using Ansys MotorCAD, Simulation of practical BMS operations using Ansys SCADE."
