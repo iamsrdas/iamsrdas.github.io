@@ -32,7 +32,7 @@
 const SITE = {
   name: "Shuvo Ronjon Das",          // EDIT: your full name — shown in the hero heading, browser tab title, and footer
   role: "Electrical Engineer, Researcher and Traveller",   // EDIT: your title/tagline — shown right after your name in the hero heading
-  institution: "MTech in Electrical Engineering, Indian Institute of Technology Roorkee ",
+  institution: "MTech in Electrical Engineering - Indian Institute of Technology Roorkee ",
   location: "Roorkee, Uttarakhand, India",
   thesis: "Researching Artificial Intelligence, Power Electronics and Battery Management Strategies for next-generation electric vehicles, with a long-term goal of pursuing a funded PhD abroad.",
   photo: "assets/img/profile.jpg",   // EDIT: replace this file with your photo (same name, or update the path)
@@ -186,7 +186,7 @@ const blogPosts = [
    --------------------------------------------------------------------- */
 const awards = [
   {
-    title: "1st Runner Up",
+    title: "1st Runner Up in the Ansys SCADE Student Challenge 2026",
     org: "Ansys SCADE Student Challenge 2026 organized by IIT Roorkee, CADFEM in association with IEEE Roorkee Subsection and UP Section",
     year: "2026",
     image: "assets/img/awards/placeholder-1.jpg",   // EDIT: award photo shown on the card and in the popup
